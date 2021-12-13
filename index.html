@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Posicionamiento SEO -->
+  <meta name="description" content="Somos un sitio web donde encontrarás recetas, noticias y mucho más sobre la comida vegana, en especial postres y muchos platos deliciosos  y llenos de sabor.">
+  <meta name="keywords" content="comida, food, vegan, veganismo, alimentos, vegetales, postres veganos, celíacos, sin gluten, gluten, gluten free, vegetariano, plantas, salud, noticias alimenticias">
+  <title>Cocina dulce y saludable</title>
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- hoja de estilos  -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- icono web -->
+  <link rel="shortcut icon" href="./img/sandia.png">
+  <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <!-- Jquery src -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Area de encabezado -->
+    <header class="header">             
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">            
+            <div class="container-fluid ">
+                <div class="logo-container">
+                    <div class="logo"><img src="./img/sandia.png" alt="logo-sandia"></div>
+                </div>
+                <a class="navbar-brand" href="#"><h1 class="titulo-web">Sofia Cocina</h1></a>                  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="boton-menu nav-item">
+                            <a class="nav-link "href="index.html">Home</a>
+                        </li> 
+                        <li class="boton-menu nav-item">
+                            <a class="nav-link" href="page/Recetario.html">Recetario</a>
+                        </li>
+                        <li class="boton-menu nav-item">
+                            <a class="nav-link" href="page/Canal.html">Canal</a>
+                        </li>
+                        <li class="boton-menu nav-item">
+                            <a class="nav-link" href="page/Historia.html">Historia</a>
+                        </li>
+                        <li class="boton-menu nav-item">
+                            <a class="nav-link" href="page/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="boton-menu nav-item">
+                            <a class="nav-link" href="page/Marketplace.html">Marketplace</a>
+                        </li>                      
+                    </ul>
+                </div>
+            </div>
+            <a><img id="btn-login" class="img-menu" src="./img/metamask-icon.png" alt="metamask-icon"></a>          
+            <a href="https://www.tiktok.com/@sofiacocinaoficial?" target="_blank"><img class="img-menu" src="./img/tiktok.png" alt="icono-tiktok"></a>
+            <a href="https://www.instagram.com/sofiacocinaoficial/?hl=es" target="_blank"><img class="img-menu" src="./img/insta.png" alt="icono-insta"></a>
+            <a href="https://www.youtube.com/channel/UCdNXrC4x5i7mVlZ-j1ar9DA" target="_blank"><img class="img-menu" src="./img/youtube.png" alt="icono-youtube"></a>     
+        </nav>
+    </header>
+    <!-- contenido web -->
+    <main class="container-fluid main-area">
+        <!-- Area de carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/slider1.png" class="d-block w-100" alt="img-carousel-1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slider2.png" class="d-block w-100" alt="img-carousel-2">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slider3.png" class="d-block w-100" alt="img-carousel-3">
+              </div>
+            </div>
+        </div>
+        <!-- Area de noticias -->
+        <section>
+            <div class="titulo-noticias">
+                <h3>Noticias</h3>                
+            </div>
+            <div class="contenido-noticias">
+                <div class="card mg-bottom" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cuentas de Instagram veganas</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"> que valen la pena conocer</h6>
+                    <p class="card-text">
+                        <ul>
+                            <li>Up beet and kaleing it</li>
+                            <li>Healthie Nut</li>
+                            <li>Alice</li>
+                            <li>That Vegan Swimmer</li>
+                            <li>Mi dieta vegana</li>
+                        </ul>
+                    </p>
+                    <a href="https://okdiario.com/lifestyle/5-cuentas-instagram-veganas-que-merece-pena-seguir-5274924" target="_blank" class="card-link">ver más</a>
+                    </div>
+                </div>
+                <div class="card mg-bottom" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Incendios en el AMAZONAS</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">causas y consecuencias</h6>
+                    <p class="card-text">¿POR QUÉ SE QUEMA EL AMAZONAS?
+                        La selva amazónica es la mayor selva tropical del planeta, con una extensión de aproximadamente 6.000.000 km².</p>
+                    <a href="https://infovegana.com/incendios-en-el-amazonas-causas-y-consecuencias/" target="_blank" class="card-link">ver más</a>
+                    </div>
+                </div>
+                <div class="card mg-bottom" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Informe especial</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">En España crece el numero de personas veganas a un 60% de la poblacion</h6>
+                    <p class="card-text">En los últimos cuatro años, 2,1 millones de personas han modificado su alimentación hacia una dieta compuesta, principalmente, por vegetales.</p>
+                    <a href="https://vegconomist.es/estudios-y-numeros/informe-especial-el-numero-de-personas-veganas-crece-un-60-de-2019-a-2021-en-espana/" target="_blank" class="card-link">ver más</a>
+                    </div>
+                </div>
+                <div class="card mg-bottom" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Starbucks y NotCo concretaron alianza</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">tiendas en Chile tendrán opciones veganas</h6>
+                    <p class="card-text">La corporación Starbucks y la empresa NotCo cerraron una alianza con la que presentarán nuevas opciones veganas en las tiendas, y se podrán disfrutar de alimentos y bebidas de origen vegetal.</p>
+                    <a href="https://www.adnradio.cl/nacional/2021/09/22/starbucks-y-notco-concretaron-alianza-tiendas-en-chile-tendran-opciones-veganas.html" target="_blank" class="card-link">ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Una familia vegana pide un menú 100 por 100 vegetal en colegios, institutos y universidades</h5>
+                  <p class="card-text">¿Cuándo incorporarán un menú 100% vegetal sano y equilibrado en los comedores de los centros públicos? Es la pregunta que una familia vegana, junto con un gran número de asociaciones y organizaciones firmantes, ha lanzado al Congreso de los Diputados con el objetivo que se promulgue una Ley que garantice un menú 100 por cien vegetal sano y equilibrado.</p>
+                  <p class="card-text"><small class="text-muted">actualizado hace 5 minutos <a href="https://www.abc.es/familia/supersanos/abci-familia-vegana-pide-menu-100-100-vegetal-colegios-institutos-y-universidades-202110010111_noticia.html?ref=https%3A%2F%2Fwww.abc.es%2Ffamilia%2Fsupersanos%2Fabci-familia-vegana-pide-menu-100-100-vegetal-colegios-institutos-y-universidades-202110010111_noticia.html" target="_blank">noticia completa</a></small></p>
+                </div>
+                <img src="./img/img-comedores.png" class="card-img-bottom" alt="comedores">
+            </div>
+        </section>
+        <!-- Area de productos -->
+        <section class="banner-bottom">
+            <div class="lista-de-productos">
+                <h3>Productos más utilizados</h3>
+            </div>           
+            <div class="productos-list">
+                <a href="https://www.pfalimentos.cl/mister-veggie/" target="_blank"><img  src="./img/banner1.png" alt="mister-Veggie-logo"></a>          
+                <a href="https://tienda.notco.com/" target="_blank"><img  src="./img/banner2.png" alt="notCo-Logo"></a>                 
+                <a href="https://www.orgran.com/" target="_blank"><img src="./img/banner3.png" alt="orgran-Logo"></a>                    
+                <a href="https://www.beyondmeat.com/" target="_blank"><img  src="./img/banner4.png" alt="beyondMeat-Logo"></a>
+            </div>
+        </section>            
+    </main>
+    <!-- Pie de pagina -->
+    <footer class="area-footer" >
+        <div>
+            <div class="footer-info">
+                <h5>Informacion nutricional</h5>
+                <p>La nutrición vegana se refiere a los aspectos nutricionales y de salud humana de las dietas veganas. Una dieta vegana bien planificada y equilibrada es adecuada para cumplir todas las recomendaciones de nutrientes en cada etapa de la vida humana.</p>
+                <p class="advertencia">Si necesita mas informacion sobre el habito alimenticio a base de plantas, consulte con un nutricionista.</p>
+                <div class="container" id="container">
+                    <ul id="gas-stats"></ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/javascript.js"></script>
+    <script src="/js/Jquery.js"></script>
+    <script src="/js/Pre-entrega-con-Jquery.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

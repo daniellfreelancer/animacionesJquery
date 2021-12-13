@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Posicionamiento SEO -->
+  <meta name="description" content="Ingresa ya y encuentra las mejores recetas veganas, en especial postres y muchos platos deliciosos, llenos de sabor.">
+  <meta name="keywords" content="comida, food, vegan, veganismo, alimentos, vegetales, postres veganos, celíacos, sin gluten, gluten, gluten free, vegetariano, plantas, salud, noticias alimenticias">
+  <title>Recetario : Comida dulce y saludable</title>
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- hoja de estilos  -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- icono web -->
+  <link rel="shortcut icon" href="../img/sandia.png">
+  <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+
+</head>
+<body>
+  <!-- area de encabezado -->
+  <header class="header">       
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+      <div class="container-fluid">
+        <div class="logo-container">
+          <div class="logo"><img src="../img/sandia.png" alt="logo-sandia"></div>
+        </div>
+        <a class="navbar-brand" href="../index.html"><h1 class="titulo-web">Sofia Cocina</h1></a>            
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="boton-menu nav-item">
+              <a class="nav-link"href="../index.html">Home</a>
+            </li> 
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Recetario.html">Recetario</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Canal.html">Canal</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Historia.html">Historia</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Marketplace.html">Marketplace</a>
+          </li>                
+          </ul>
+        </div>
+      </div>
+      <a><img id="btn-login" class="img-menu" src="../img/metamask-icon.png" alt="metamask-icon"></a>          
+      <a href="https://www.tiktok.com/@sofiacocinaoficial?" target="_blank"><img class="img-menu" src="../img/tiktok.png" alt="icono-tiktok"></a>
+      <a href="https://www.instagram.com/sofiacocinaoficial/?hl=es" target="_blank"><img class="img-menu" src="../img/insta.png" alt="icono-insta"></a>
+      <a href="https://www.youtube.com/channel/UCdNXrC4x5i7mVlZ-j1ar9DA" target="_blank"><img class="img-menu" src="../img/youtube.png" alt="icono-youtube"></a>        
+    </nav>
+  </header>
+  <!-- Divisor principal -->
+  <div class="titulo-recetario-recetas">
+    <span class="titulo-recetario-recetas"><h2>Recetario</h2></span>
+  </div>
+  <!-- Contenido web -->
+  <main class="container-fluid main-area">       
+    <section class="container-fluid recetario-area">
+      <div class="galeria">
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-opal">Flan Choco-coco</h4>
+          <img src="../img/receta1.png" alt="flanDeCoco">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>1 taza de leche de coco</li>
+            <li>1 cucharadita de agar agar en polvo</li>
+            <li>1/4 taza de sirope de ágave</li>
+            <li>3 cditas de vainilla</li>
+            <li>sirope de chocolate al gusto</li>
+          </ul>
+        </div>                    
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-aqua">Tostadas francesas</h4>
+          <img src="../img/receta2.png" alt="tostadasFrancesas">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>2 rebanadas de pan</li>
+            <li>Leche vegetal</li>
+            <li>2 cdas de vainilla</li>
+            <li>Chocolate fundido</li>
+            <li>Nueces, fresas o cerezas</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-mint">Yogurt con frutas</h4>
+          <img src="../img/receta3.png" alt="yogurtDeCoco">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>Yogurt de coco vegano</li>
+            <li>2 galletas tipo maria trituradas</li>
+            <li>1/4 taza de frutos rojos</li>
+            <li>1 cdita de coco rallado</li>
+            <li>Nueces (opcional)</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-crayola">Choco-Cookies</h4>
+          <img src="../img/receta4.png" alt="avenayChocolate">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>1 taza de avena</li>
+            <li>3 cdas soperas de aceite</li>
+            <li>4 cucharadas soperas de harina de trigo</li>
+            <li>1/2 cdita de levadura en polvo</li>
+            <li>1/2 tabla de chocolate negro</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-vivid">Helado casero</h4>
+          <img src="../img/receta5.png" alt="heladoCasero">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>1 taza de leche de coco</li>
+            <li>1/2 bol de Frutos rojos congelados</li>
+            <li>1 banana sin congelar</li>
+            <li>1 hojita de menta</li>
+            <li>sirope de fruta (opcional)</li>
+          </ul>
+        </div>            
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-opal">Fudge de chocolate</h4>
+          <img src="../img/receta6.png" alt="fudgeChocolate">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>260 g de crema de anacardos</li>
+            <li>80 g de Chocolate blanco</li>
+            <li>80 g de sirope de arce</li>
+            <li>1/4 de una cucharadita de vainilla</li>
+            <li>Una pizca de sal gruesa</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-aqua">Mousse Choco-Palta</h4>
+          <img src="../img/receta7.png" alt="mouseeChocolate">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>7 cucharadas de cacao en polvo</li>
+            <li>1/2 palta (aguacate)</li>
+            <li>1 banana congelada</li>
+            <li>3 cucharadas de jugo de limón</li>
+            <li>2 cucharadas de sirope de arce</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-mint">tortitas de coco</h3>
+          <img src="../img/receta8.png" alt="tortitasVeganas">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>Una cucharada grande de semillas de lino</li>
+            <li>4-6 cucharadas de agua</li>
+            <li>160 g de harina de trigo</li>
+            <li>200 ml de leche de coco 80%</li>
+            <li>Una pizca de sal y polvo de hornear</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-crayola">Sniker vegan</h4>
+          <img src="../img/receta9.png" alt="snikerVegan">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>30 g de arroz inflado</li>
+            <li>2 latas de crema de coco</li>
+            <li>75 g de pasta de almendra blanca</li>
+            <li>1/4 de una cucharadita de vainilla</li>
+            <li>Chocolate cobertura al gusto</li>
+          </ul>
+        </div>        
+        <div class="contenido-recetas card">
+          <h4 class="titulos-recetas-vivid">Bombones de coco</h4>
+          <img src="../img/receta10.png" alt="bombonesDulceyCoco">
+          <h5>Ingredientes</h5>
+          <ul class="listaIngredientes">
+            <li>100 gramos de azúcar de coco</li>
+            <li>400 ml de leche de coco</li>
+            <li>200 gramos de chocolate negro para fundir</li>
+            <li>2 cucharadas de aceite de coco y vainilla</li>
+            <li>1 cucharadita de coco rallado</li>
+          </ul>
+        </div>
+      </div>                
+    </section>   
+    <section>     
+      <button type="button" id="btn-recetas" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <h4>Proximas recetas</h4>
+      </button>        
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">        
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Proximas recetas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>        
+      <div class="modal-body">
+        <ul>
+          <li>Arroz con leche</li>
+          <li>Budin de calabaza</li>
+          <li>Budin de naranja</li>
+          <li>Helado de Mango y coco</li>
+          <li>Rosquillas de chocolate</li>
+        </ul>
+      </div>        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+      </div>        
+    </section>   
+  </main>
+  <!-- Pie de pagina -->
+  <footer class="area-footer">
+    <div>
+      <div class="footer-info">
+        <h3>Informacion nutricional</h3>
+        <p>La nutrición vegana se refiere a los aspectos nutricionales y de salud humana de las dietas veganas. Una dieta vegana bien planificada y equilibrada es adecuada para cumplir todas las recomendaciones de nutrientes en cada etapa de la vida humana.</p>
+        <p class="advertencia">Si necesita mas informacion sobre el habito alimenticio a base de plantas, consulte con un nutricionista.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/Pre-entrega-con-Jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

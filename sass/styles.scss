@@ -1,0 +1,332 @@
+/*Paleta de colores
+--fire-opal: #ee6055ff;
+--medium-aquamarine: #60d394ff;
+--mint-green: #aaf683ff;
+--orange-yellow-crayola: #ffd97dff;
+--vivid-tangerine: #ff9b85ff; */
+
+/*Fuente para textos
+Verdana, Geneva, Tahoma, sans-serif
+
+Fuente para titulos
+'Ubuntu', sans-serif*/
+//html
+
+* {
+    box-sizing: border-box;
+}
+
+// logo animado
+.logo-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;        
+        animation: logo 4s linear infinite;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform:  translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform:  translate(-50%, -50%) rotate(360deg);
+    }    
+}
+
+@media (max-width: 451px) {
+    .logo-container {
+        display: none;
+    }
+    .dex-area {
+        display: none;
+    }
+}
+
+// estilos generales
+body {
+    background-image: url(../img/mosaicoBody.png);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Header
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    nav {
+        div {
+            a {
+                .titulo-web {
+                    font-size: 45px;  
+                    font-family: 'Ubuntu', sans-serif;
+                }
+            }
+            ul {
+                .boton-menu{
+                    padding: 0px 10px;
+                    background-color: #60d394ff;
+                    margin: 10px 10px;
+                    border-radius: 5px;
+                    width: auto;
+                    text-align:center;
+                }
+                .boton-menu:hover {
+                    background-color: #ff9b85ff;
+                }        
+            } 
+        }
+        a .img-menu {
+            width: 40px;
+            align-items:center;
+            margin: 5px;
+        
+        }
+        a .img-menu:hover {
+            transform: scale(0.7);
+        }
+    }
+}
+
+//Separador principal
+.titulo-recetario-contacto {
+    background-color: rgba(255, 155, 133, 0.550);
+    text-align: center;
+    margin: 5px;
+}
+.titulo-recetario-recetas {
+    background-color: rgba(96, 211, 148, 0.550);
+    text-align: center;
+    margin: 5px;
+}
+
+.titulo-canal {
+    background-color: rgba(238, 95, 85, 0.550);
+    text-align: center;
+    margin: 5px;    
+}
+
+.titulo-historia {
+    background-color: rgba(255, 216, 125, 0.550);
+    text-align: center;
+    margin: 5px
+}
+
+.info-login {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
+.box-token {
+    display: flex;
+    justify-content: center;
+    
+    .token-list {
+        text-align: center;
+        font-size: large;
+        background-color: aliceblue;
+        padding: 5px 10px;
+        width: auto;
+        text-overflow: clip;
+        border-radius: 25px;
+        border: 1px solid black;
+    }
+    .boton-copiar {
+        background-color: #60d394ff;
+        border-radius: 5px;
+        height: fit-content;
+        padding: 5px 10px;
+        margin-left: 10px;
+        width: auto;
+        font-weight: bold;
+
+    }
+    .boton-copiar:hover {
+        background-color: #ff9b85ff;
+    } 
+
+
+}
+
+// DEX-AREA
+
+.dex-area {
+    background-color:  rgba(238, 95, 85, 0.550);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:center;
+    height: 100px;
+    margin-bottom: 5px;
+    .dex-logo {
+        
+        height: 200px;
+    }
+}
+
+.titulo-token {
+    text-align: center;
+    font-family:'Ubuntu', sans-serif;
+    margin-right: 5px;
+}
+
+
+
+.botones-animacion-jq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 10px;
+    
+    .btn-opacidad {
+        text-align: center;
+    }
+}
+
+// Main
+.main-area {
+    section {
+        .galeria {
+            display: grid;
+            gap: 1rem;
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+            gap: 5px 5px;
+            margin: 10px 30px;
+            grid-auto-flow: dense;
+            justify-content: center;
+            margin-top: 30px;
+            margin:auto;
+            text-align: center;
+        }
+        div {
+            a {
+                text-align: center;
+            }
+            .contenido-recetas {
+                .titulos-recetas-opal {
+                    background-color:rgba(238, 95, 85, 0.350);
+                    padding: 5px;
+                    text-align: center;
+                    font-family: 'Cinzel', serif;
+                    font-size: 20px;
+                  }
+                
+                .titulos-recetas-aqua {
+                    background-color:rgba(96, 211, 148, 0.350);
+                    padding: 5px;
+                    text-align: center;
+                    font-family: 'Cinzel', serif;
+                    font-size: 20px;                
+                }
+                .titulos-recetas-mint {
+                    background-color:rgba(169, 246, 131, 0.350);
+                    padding: 5px;
+                    text-align: center;
+                    font-family: 'Cinzel', serif;
+                    font-size: 20px;                
+                }
+                
+                .titulos-recetas-crayola {
+                    background-color:rgba(255, 216, 125, 0.350);
+                    padding: 5px;
+                    text-align: center;
+                    font-family: 'Cinzel', serif;
+                    font-size: 20px;                
+                }
+                
+                .titulos-recetas-vivid {
+                    background-color:rgba(255, 155, 133, 0.350);
+                    padding: 5px;
+                    text-align: center;
+                    font-family: 'Cinzel', serif;
+                    font-size: 20px;                
+                }
+            }
+            .contenido-recetas:hover {
+                transform: scale(0.99);
+            }
+            .proximas-recetas {
+                padding: 10px 10px;    
+            }
+            #btn-recetas {
+                background-color:rgba(96, 211, 148, 0.350);        
+            }
+            .img-historia {
+                display:flex;
+                width: 100%;
+                height:100%;
+            }
+            .texto-historia p {
+                text-align: justify;
+            }
+
+        }
+        .titulo-noticias {
+            text-align: center;
+            background-color: rgba(169, 246, 131, 0.350);
+            margin-top: 10px;
+
+        }
+        .lista-de-productos {
+            text-align: center;
+            background-color: rgba(169, 246, 131, 0.350);
+        }
+        .productos-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contenido-noticias {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+            .mg-bottom {
+                margin-bottom: 5px;
+
+            }
+        }
+    }
+}
+
+.canal-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// footer
+
+footer {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.350);
+    
+        .advertencia {
+            font-style: italic;            
+        }
+        div {
+            div {
+                p {
+                    .advertencia {
+                        font-style: italic;
+                }
+            }
+        }
+    }
+}

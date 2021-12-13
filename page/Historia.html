@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Posicionamiento SEO -->
+  <meta name="description" content="Ingresa ya y encuentra artículos sobre la historia de la alimentación en base a plantas, y cómo se alimentaban nuestros antepasados, ya sea por creencias, modismos o estilo de vida.">
+  <meta name="keywords" content="comida, food, vegan, veganismo, alimentos, vegetales, postres veganos, celíacos, sin gluten, gluten, gluten free, vegetariano, plantas, salud, noticias alimenticias">
+  <title>Historia : Comida dulce y saludable</title>
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- hoja de estilos  -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- icono web -->
+  <link rel="shortcut icon" href="../img/sandia.png">
+  <!-- Moralis SDK code -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <!-- Jquery src -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Area de encabezado -->
+  <header class="header">        
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+      <div class="container-fluid">
+        <div class="logo-container">
+          <div class="logo"><img src="../img/sandia.png" alt="logo-sandia"></div>
+        </div>
+        <a class="navbar-brand" href="../index.html"><h1 class="titulo-web">Sofia Cocina</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="boton-menu nav-item">
+              <a class="nav-link"href="../index.html">Home</a>
+            </li> 
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Recetario.html">Recetario</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Canal.html">Canal</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Historia.html">Historia</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+            <li class="boton-menu nav-item">
+              <a class="nav-link" href="Marketplace.html">Marketplace</a>
+          </li>                
+          </ul>
+        </div>
+      </div>
+      <a><img id="btn-login" class="img-menu" src="../img/metamask-icon.png" alt="metamask-icon"></a>          
+      <a href="https://www.tiktok.com/@sofiacocinaoficial?" target="_blank"><img class="img-menu" src="../img/tiktok.png" alt="icono-tiktok"></a>
+      <a href="https://www.instagram.com/sofiacocinaoficial/?hl=es" target="_blank"><img class="img-menu" src="../img/insta.png" alt="icono-insta"></a>
+      <a href="https://www.youtube.com/channel/UCdNXrC4x5i7mVlZ-j1ar9DA" target="_blank"><img class="img-menu" src="../img/youtube.png" alt="icono-youtube"></a>
+    </nav>
+  </header>
+  <!-- Divisor principal -->
+  <div class="titulo-historia">
+    <span class="titulo-canal"><h2>Historia</h2></span>
+  </div>
+  <!-- Contenido web -->
+  <main class="container-fluid main-area">
+    <div class="card texto-historia">
+      <div class="card-header">
+        <h4>Veganismo como hábito alimenticio</h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Origen de la dieta vegana</h5>
+        <p class="card-text">
+          El origen de la dieta vegana es uno de los temas de más rabiosa actualidad ya que desde hace muchos años la dieta vegana se consideraba algo para hippies, pero los más recientes estudios confirman sus múltiples beneficios para el  <b>deporte y la salud.</b> 
+        </p>
+        <p class="card-text">
+          Nuestro origen sobre la dieta vegana y vegetariana se remonta a muchísimos siglos atrás, a tiempos ancestrales, aproximadamente al siglo VI antes de cristo, 
+          los documentos más recientes que poseemos sobre una dieta vegana o vegetariana estricta hacen referencia a los seguidores del Orfismo, una religión de la antigua Grecia que fundo Orfeo. Los seguidores de dicha religión no comían nada de origen animal.
+        </p>          
+        <img  class="img-historia container-fluid" src="../img/sinagoga.jpg" alt="sinagoga"> 
+        <p class="card-text"></p>
+          La base de esta religion se basa en la reencarnación, por lo que ellos mismos tenían prohibido comer o hacer sacrificios animales, por ello se negaban a comer animales ya que de lo contrario consumían energías negativas para su cuerpo y alma.  Además de gozar de una gran salud física, vivían en una edad dorada de conocimiento y armonía con los animales y el medio ambiente.
+          Uno de los principales filósofos de la época que empezó a evitar el consumo de carne fue Pitágoras el cual desarrollo aun más sus teorías sobre la reencarnación e incluso fundó <strong>»the pythagorean way of life»</strong>  a los que le siguieron otros grandes nombres como Platón, Jenocrátes o Plutarco. Y más tarde grandes nombres como Leonardo Va Vinci, Tyron , Voltaire o Rousseau se sumaron a esta misma idea.
+        </p>          
+        <h5 class="card-title">Dieta vengana en las antiguas civilizaciones</h5>
+        <p class="card-text">
+          Ya hemos visto que la dieta vegana se remonta a muchísimos siglos atrás pero ¿qué es lo que comían estas civilizaciones? Además sabemos que estas civilizaciones ancestrales gozaban de una anatomía casi perfecta a nivel de desarrollo muscular, de hecho el ideal estético griego hace referencia a esta era de la civilización.
+          Los principales alimentos básicos de la dieta vegana de las antiguas civilizaciones de las cuales no sólo hago referencia a la griega, a las mayas, incas, china, egipcia e india, son los siguientes:
+        </p>
+        <ul>
+          <li>Trigo y cebada</li>
+          <li>Frutas y nueces</li>
+          <li>Maíz, arroz y lentejas</li>
+          <li>Papas y quinoa</li>
+          <li>Garbanzos y soja(soya)</li>
+        </ul>
+        <h5 class="card-title">Dieta vengana en la actualidad</h5>
+        <p class="card-text">
+          Los datos que dan origen a en la sociedad más contemporánea datan a 1944 como la primera fundación de sociedad vegana en Leicester ( Inglaterra) y la primera sociedad vegetariana se remonta al año 1847 también en Inglaterra.
+          Cuanto más retrocedemos en el tiempo, los motivos de llevar dicha dieta se basan en espirituales y metafísicos, sin embargo cuanto más avanzamos en el tiempo, los motivos se derivan más a la ética y salud.
+        </p>        
+      </div>
+    </div>
+  </main>
+  <!-- Pie de pagina -->
+  <footer class="area-footer">
+    <div>
+      <div class="footer-info">
+        <h3>Informacion nutricional</h3>
+        <p>La nutrición vegana se refiere a los aspectos nutricionales y de salud humana de las dietas veganas. Una dieta vegana bien planificada y equilibrada es adecuada para cumplir todas las recomendaciones de nutrientes en cada etapa de la vida humana.</p>
+        <p class="advertencia">Si necesita mas informacion sobre el habito alimenticio a base de plantas, consulte con un nutricionista.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/Pre-entrega-con-Jquery.js"></script>
+  <script src="../js/Jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
